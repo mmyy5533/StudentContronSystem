@@ -1,0 +1,22 @@
+package com.itheima.ifdemo;
+
+import java.util.Scanner;
+
+public class ifDemo1 {
+    public static void main(String[] args) {
+        // 键盘录入女婿酒量，如果大于2斤，老丈人给出回应，反之不回应
+        // if格式
+        //if（关系表达式）{
+        //    语句体;
+        //}
+        //分析：
+        //1.键盘录入女婿酒量
+        Scanner sc  = new Scanner(System.in);
+        System.out.println("请输入女婿酒量");
+        int wine = sc.nextInt();
+        //2.判断酒量是否大于2斤
+        if(wine > 2){
+            System.out.println("老丈人：你这酒量不错啊");
+        }
+    }
+}
